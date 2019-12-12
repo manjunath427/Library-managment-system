@@ -9,7 +9,7 @@ class Author(models.Model):
         verbose_name_plural="author"
 
     def __str__(self):
-        return self.author_name
+         return self.author_name
 
 class Category(models.Model):
     category_name = models.CharField(max_length=100,help_text="enter the name of category")
@@ -52,8 +52,8 @@ class Record(models.Model):
 
 
 
-        # def upper(self):
-        #     return  self.book_name.upper()
+        def upper(self):
+            return  self.book_name.upper()
 
 
 

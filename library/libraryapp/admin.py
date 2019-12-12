@@ -1,5 +1,5 @@
 from django.contrib import admin
-from libraryapp.models import Book,Author,Category,Member,Record
+from .models import Book,Author,Category,Member,Record
 from django import forms
 
 class AuthorAdminForm(forms.ModelForm):
@@ -22,7 +22,7 @@ class BookAdminForm(forms.ModelForm):
 
     def clean(self):
         price = self.cleaned_data.get('book_price')
-        if len(str(price)) < 500:
+        if price < 500:
             raise forms.ValidationError('please enter a valid price,price cannot be graterthan than 500 price',
                                         code='invalid')
         return self.cleaned_data
