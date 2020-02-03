@@ -11,10 +11,10 @@
 
  You need to install the following packages :
 
-   asgiref==3.2.3
-   Django==3.0.1
-   django-jsonfield==1.4.0
-   djangorestframework==3.11.0
+   asgiref==3.2.3.
+   Django==3.0.1.
+   django-jsonfield==1.4.0.
+   djangorestframework==3.11.0.
    
    
    
